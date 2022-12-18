@@ -1,4 +1,4 @@
-import Button from '@mui/material/Button';
+import Link from "next/link";
 import CheckIcon from '@mui/icons-material/Check';
 import styles from './plan.module.scss'
 
@@ -19,7 +19,7 @@ export default function Plan({ title, price, text, list, btnText, btnLink, isMos
                     )
                 }
             </ul>
-            <Button href={btnLink} className={styles.plan__btn}>{btnText}</Button>
+            <Link href={btnLink} className={styles.plan__btn}>{btnText}</Link>
         </div>
     )
 }
