@@ -1,0 +1,49 @@
+.hero {
+    background: var(--dark);
+    padding: 47px 20px 145px;
+    text-align: center;
+    color: #FFFFFF;
+
+    &__container {
+        max-width: var(--width);
+        margin: 0 auto;
+    }
+
+    &__text {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    &__title {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 32px;
+        margin-top: 36px;
+    }
+
+    &__subtitle {
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    &__cards {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(auto, 355px));
+        column-gap: 45px;
+        justify-content: center;
+        margin-top: 104px;
+        margin-right: 10px;
+    }
+
+    @media screen and (max-width: 1023px) {
+        padding: 120px 20px 70px;
+
+        &__cards {
+            display: block;
+            margin-top: 60px;
+        }
+    }
+}

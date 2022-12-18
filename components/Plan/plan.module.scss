@@ -1,0 +1,148 @@
+.plan {
+  color: #FFFFFF;
+  padding: 35px 35px 40px;
+  background: var(--dark);
+  border-top-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  max-width: 325px;
+
+  &.planPopular {
+    background: var(--green);
+    color: var(--dark);
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  &__price {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+    margin: 15px 0;
+  }
+
+  &__text {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 24px;
+    margin: 24px 0 36px;
+  }
+
+  &__item {
+    display: flex;
+
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__mark {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    margin-right: 10px;
+    text-align: center;
+    flex-shrink: 0;
+    transform: translateY(3px);
+
+    .planPopular & {
+      background: var(--dark);
+    }
+  }
+
+  &__icon {
+    width: 17px;
+    height: 17px;
+    fill: var(--dark);
+
+    .planPopular & {
+      fill: #FFFFFF;
+    }
+  }
+
+  &__btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    text-align: center;
+    color: var(--dark);
+    text-transform: uppercase;
+    background: #FFFFFF;
+    padding: 11px;
+    min-width: 165px;
+    width: fit-content;
+    display: inline-block;
+    border-radius: 25px;
+    border-bottom-right-radius: unset;
+    margin-top: auto;
+
+    &:hover {
+      background: var(--green);
+    }
+
+    .planPopular & {
+      background: var(--pink);
+      color: #FFFFFF;
+
+      &:hover {
+        background: var(--dark);
+      }
+    }
+  }
+
+  &__top {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--green);
+    text-align: center;
+    text-transform: uppercase;
+    background: var(--dark);
+    padding: 10px;
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    border-radius: 50px;
+    border-bottom-right-radius: unset;
+  }
+
+  @media screen and (max-width: 1023px) {
+    margin: 0 auto;
+
+    &:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    &.planPopular {
+      margin-top: 75px;
+
+      &:first-child {
+        margin-top: 35px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 767px) {
+    padding: 25px 25px 30px;
+  }
+}

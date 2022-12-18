@@ -1,0 +1,21 @@
+.plans {
+  padding: 145px 20px 105px;
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(auto, 325px));
+    column-gap: 30px;
+    justify-content: center;
+    max-width: var(--width);
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 1023px) {
+    padding-top: 47px;
+    padding-bottom: 70px;
+
+    &__inner {
+      display: block;
+    }
+  }
+}

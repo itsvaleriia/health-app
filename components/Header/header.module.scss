@@ -1,0 +1,33 @@
+.header {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: #000000;
+  background: #ffffff;
+  border-bottom: 3px solid #ffffff;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 14px 25px;
+    max-width: var(--width);
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 767px) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+
+    &__inner {
+      justify-content: flex-end;
+      background: #ffffff;
+    }
+  }
+}

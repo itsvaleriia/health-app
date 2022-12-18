@@ -1,0 +1,15 @@
+.menu {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+
+    &__icon {
+        width: 24px;
+        margin-right: 10px;
+        transform: scale(1.3);
+    }
+}
