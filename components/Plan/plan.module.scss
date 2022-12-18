@@ -59,6 +59,7 @@
     height: 20px;
     border-radius: 50%;
     background: #FFFFFF;
+    color: var(--dark);
     margin-right: 10px;
     text-align: center;
     flex-shrink: 0;
@@ -66,17 +67,13 @@
 
     .planPopular & {
       background: var(--dark);
+      color: #FFFFFF;
     }
   }
 
   &__icon {
-    width: 17px;
-    height: 17px;
-    fill: var(--dark);
-
-    .planPopular & {
-      fill: #FFFFFF;
-    }
+    max-width: 17px;
+    max-height: 17px;
   }
 
   &__btn {
